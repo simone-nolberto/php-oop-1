@@ -19,18 +19,15 @@ class Production
     {
 
         return ($this->title);
-
     }
     public function getLanguage(): string
     {
 
         return ($this->language);
-
     }
     public function getVote(): string
     {
 
         return ($this->vote);
-
     }
 }
