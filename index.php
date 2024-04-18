@@ -1,24 +1,12 @@
 <?php
 
-class Production
-{
-    public $title;
-    public $language;
-    public $vote;
-
-
-    public function __construct(string $title, string $language, int $vote)
-    {
-        $this->title = $title;
-        $this->language = $language;
-        $this->vote = $vote;
-    }
-}
+require_once __DIR__ . '/models/Production.php';
 
 $panda = new Production('Pandina', 'italian', 5);
 $clio = new Production('Clio', 'french', 7);
 
-var_dump($panda, $clio);
+// var_dump($panda, $clio);
+
 
 ?>
 
@@ -37,9 +25,15 @@ var_dump($panda, $clio);
     <h1>Hello World</h1>
 
     <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li><?php echo $panda->getTitle() ?></li>
+        <li><?php echo $panda->getLanguage() ?></li>
+        <li><?php echo $panda->getVote() ?></li>
+    </ul>
+
+    <ul>
+        <li><?php echo $clio->getTitle() ?></li>
+        <li><?php echo $clio->getLanguage() ?></li>
+        <li><?php echo $clio->getVote() ?></li>
     </ul>
 
 
