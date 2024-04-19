@@ -4,6 +4,8 @@ require_once __DIR__ . '/models/Production.php';
 require_once __DIR__ . '/db.php';
 
 
+
+
 ?>
 
 
@@ -27,15 +29,17 @@ require_once __DIR__ . '/db.php';
 
                 <div class="col">
                     <div class="card">
-                        <ul>
-                            <li><?php echo $production->getTitle() ?></li>
-                            <li><?php echo $production->getLanguage() ?></li>
-                            <li><?php echo $production->getVote() ?></li>
-                            <li><?php echo $production->getGenre() ?></li>
-                        </ul>
+
+                        <div class="card-body">
+                            <h4 class="card-title"><?php echo $production->getTitle() ?></h4>
+                            <p class="card-language">Lingua: <?php echo $production->getLanguage() ?></p>
+                            <p class="card-language">Voto: <?php echo $production->getVote() ?></p>
+                            <p class="card-language">Genere: <?php echo $production->getGenre() ?></p>
+
+                        </div>
+
                     </div>
                 </div>
-
 
             <?php endforeach ?>
         </div>
