@@ -8,7 +8,7 @@ class TvSerie extends Production
 
     public $seasonNumber;
 
-    public function __construct(int $seasonNumber)
+    public function __construct($title,  $language, $vote, $genre, int $seasonNumber)
     {
         parent::__construct( $title,  $language, $vote, $genre);
 
