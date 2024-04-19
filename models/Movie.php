@@ -7,13 +7,43 @@ class Movie extends Production
 
 
 
-    public function __construct(string $title, string $language, int $vote, Genre $genre, int $profits, int $lasting)
+    public function __construct(int $profits, int $lasting)
     {
-        $this->title = $title;
-        $this->language = $language;
-        $this->vote = $vote;
-        $this->genre = $genre;
+
+        parent::__construct( $title,  $language,  $vote,  $genre);
         $this->profits = $profits;
         $this->lasting = $lasting;
+    }
+
+    public function getTitle(): string
+    {
+
+        return ($this->title);
+    }
+    public function getLanguage(): string
+    {
+
+        return ($this->language);
+    }
+    public function getVote(): string
+    {
+
+        return ($this->vote);
+    }
+
+    public function getGenre(): string
+    {
+
+        return ($this->genre->name);
+    }
+    public function getProfits(): string
+    {
+
+        return ($this->profits);
+    }
+    public function getLasting(): string
+    {
+
+        return ($this->lasting);
     }
 }

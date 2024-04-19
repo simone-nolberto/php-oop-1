@@ -8,12 +8,10 @@ class TvSerie extends Production
 
     public $seasonNumber;
 
-    public function __construct(string $title, string $language, int $vote, Genre $genre, int $seasonNumber)
+    public function __construct(int $seasonNumber)
     {
-        $this->title = $title;
-        $this->language = $language;
-        $this->vote = $vote;
-        $this->genre = $genre;
+        parent::__construct( $title,  $language, $vote, $genre);
+
         $this->seasonNumber = $seasonNumber;
     }
 
