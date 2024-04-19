@@ -3,8 +3,8 @@
 require_once __DIR__ . '/models/Production.php';
 
 $productions = [
-    new Production('Pandina', 'italian', 5),
-    new Production('Clio', 'french', 7)
+    new Production('Benvenuti al sud', 'italian', 6),
+    new Production('Non sposate le mie figlie', 'french', 7)
 ]
 
 
