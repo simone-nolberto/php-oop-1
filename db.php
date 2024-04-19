@@ -19,5 +19,5 @@ $TvSeries = [
 
 $Movies = [
     new Movie('Avatar', 'en', 8, new Genre('action', 'a story about the conquer of an alien planet'), 100, 3),
-    new Movie('Matrix','en', 7, new Genre('sci-fi', 'the story of a common man who defeats evil force'), 300, 2-5),
+    new Movie('Matrix','en', 7, new Genre('sci-fi', 'the story of a common man who defeats evil force'), 300, 2),
 ];
