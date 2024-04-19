@@ -1,6 +1,10 @@
 <?php
 
+require_once __DIR__ . '/Production.php';
+
+
 class Movie extends Production
+
 {
     public $profits;
     public $lasting;
@@ -45,5 +49,15 @@ class Movie extends Production
     {
 
         return ($this->lasting);
+    }
+
+    public function setProfits($profits)
+    {
+        $this->profits = $profits;
+    }
+
+    public function setLasting($lasting)
+    {
+        $this->lasting = $lasting;
     }
 }
