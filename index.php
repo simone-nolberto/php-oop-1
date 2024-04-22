@@ -27,11 +27,11 @@ require_once __DIR__ . '/db.php';
                     <div class="card text-center">
 
                         <div class="card-body">
-                            <h4 class="card-title"><?php echo $production->title ?></h4>
-                            <p><strong>Lingua:</strong> <?php echo $production->language ?></p>
-                            <p><strong>Voto:</strong> <?php echo $production->vote ?></p>
-                            <p><strong>Genere:</strong> <?php echo $production->genre->name ?></p>
-                            <p><strong>Sinossi:</strong> <?php echo $production->genre->description ?></p>
+                            <h4 class="card-title"><?php echo $production->getTitle() ?></h4>
+                            <p><strong>Lingua:</strong> <?php echo $production->getLanguage() ?></p>
+                            <p><strong>Voto:</strong> <?php echo $production->getVote() ?></p>
+                            <p><strong>Genere:</strong> <?php echo $production->genre->getName() ?></p>
+                            <p><strong>Sinossi:</strong> <?php echo $production->genre->getDescription() ?></p>
 
                         </div>
 
@@ -50,12 +50,12 @@ require_once __DIR__ . '/db.php';
                     <div class="card text-center">
 
                         <div class="card-body">
-                            <h4 class="card-title"><?php echo $TvSerie->title ?></h4>
-                            <p><strong>Lingua:</strong> <?php echo $TvSerie->language ?></p>
-                            <p><strong>Voto:</strong> <?php echo $TvSerie->vote ?></p>
-                            <p><strong>Genere:</strong> <?php echo $TvSerie->genre->name ?></p>
-                            <p><strong>Sinossi: </strong><?php echo $TvSerie->genre->description ?></p>
-                            <p><strong>Stagioni:</strong> <?php echo $TvSerie->seasonNumber ?> </p>
+                            <h4 class="card-title"><?php echo $TvSerie->getTitle() ?></h4>
+                            <p><strong>Lingua:</strong> <?php echo $TvSerie->getLanguage() ?></p>
+                            <p><strong>Voto:</strong> <?php echo $TvSerie->getVote() ?></p>
+                            <p><strong>Genere:</strong> <?php echo $TvSerie->genre->getName() ?></p>
+                            <p><strong>Sinossi: </strong><?php echo $TvSerie->genre->getDescription() ?></p>
+                            <p><strong>Stagioni:</strong> <?php echo $TvSerie->getSeasonNumber() ?> </p>
                         </div>
 
                     </div>
@@ -72,13 +72,13 @@ require_once __DIR__ . '/db.php';
                     <div class="card text-center">
 
                         <div class="card-body">
-                            <h4 class="card-title"><?php echo $Movie->title ?></h4>
-                            <p><strong>Lingua:</strong> <?php echo $Movie->language ?></p>
-                            <p><strong>Voto:</strong> <?php echo $Movie->vote ?></p>
-                            <p><strong>Genere:</strong> <?php echo $Movie->genre->name ?></p>
-                            <p><strong>Sinossi:</strong> <?php echo $Movie->genre->description ?></p>
-                            <p><strong>Introiti:</strong> <?php echo $Movie->profits ?></p>
-                            <p><strong>Durata:</strong> <?php echo $Movie->lasting ?></p>
+                            <h4 class="card-title"><?php echo $Movie->getTitle() ?></h4>
+                            <p><strong>Lingua:</strong> <?php echo $Movie->getLanguage() ?></p>
+                            <p><strong>Voto:</strong> <?php echo $Movie->getVote() ?></p>
+                            <p><strong>Genere:</strong> <?php echo $Movie->genre->getName() ?></p>
+                            <p><strong>Sinossi:</strong> <?php echo $Movie->genre->getDescription() ?></p>
+                            <p><strong>Introiti:</strong> <?php echo $Movie->getLasting() ?></p>
+                            <p><strong>Durata:</strong> <?php echo $Movie->getLasting() ?></p>
                         </div>
 
                     </div>
